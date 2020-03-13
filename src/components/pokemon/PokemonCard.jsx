@@ -20,27 +20,27 @@ const PokemonCard = ({ name, url }) => {
   };
 
   return (
-    <div className="col-md-3 col-sm-6 mb-5">
+    <div
+      className="col-md-3 col-sm-6 mb-5"
+      style={{ marginTop: "50px", marginLeft: "60px" }}
+    >
       <Link to={`pokemon/${pokemonIndex}`}>
         <div className="card-container">
           <div className="card card-back">
-            <h6 className="card-header">{pokemonIndex}</h6>
+            <h6 className="card-header">
+              {maysFirstLetter(namePokemon.toLowerCase())}
+            </h6>
             <img
               className="card-img-top rounded mx-auto mt-2"
               src={`${imageUrl + pokemonIndex}.png`}
             />
-            <div className="card-body mx-auto">
-              <h6 className="card-title">
-                {maysFirstLetter(namePokemon.toLowerCase())}
-              </h6>
-            </div>
           </div>
 
           <div className="card card-front ">
             <img
               className="card-img-top rounded mx-auto mt-0"
               src={
-                "https://i.pinimg.com/originals/15/11/39/15113952d52bd1cbb1b7b446baffdbb3.jpg"
+                "http://www.pngplay.com/wp-content/uploads/2/Pokeball-PNG-Photo-Image.png"
               }
             />
             <div className="card-body mx-auto"></div>

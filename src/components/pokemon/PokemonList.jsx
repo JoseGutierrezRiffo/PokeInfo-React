@@ -28,7 +28,7 @@ const PokemonList = () => {
           ))}
         </div>
       ) : (
-        <h1>Loading Pokemon</h1>
+        <br />
       )}
     </div>
   );
